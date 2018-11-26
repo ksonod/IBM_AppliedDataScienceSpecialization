@@ -9,8 +9,7 @@ for j in range(2):
     raw_random_wikipedia_page=requests.get(wikipedia_link)
 
     wikipage=raw_random_wikipedia_page.text
-    with open('/Users/kotarosonoda/Documents/Python_Practice/wikipedia.txt','w') as wiki:
-        wiki.write(wikipage)
+ 
 
     # Extracting the title of the Wikipedia page.
     title_int=wikipage.find('<title>')
